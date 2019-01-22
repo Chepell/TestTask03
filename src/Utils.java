@@ -14,6 +14,7 @@ public class Utils {
 			char symb = str.charAt(i);
 			if (symb == '[' || symb == '{' || symb == '(') {
 				stack.push(symb);
+				result = false;
 			} else if (symb == ']' || symb == '}' || symb == ')') {
 				if (!stack.isEmpty()) {
 					Character fromStack = stack.pop();

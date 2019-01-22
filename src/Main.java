@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 /**
  * Artem Voytenko
  * 22.01.2019
@@ -13,13 +11,17 @@ public class Main {
 				"())",
 				"(}",
 				"(vfdv{fdvvfd}vff)ddv",
-				"(vfdv{fdv)vfd}vffddv"
+				"(vfdv{fdv)vfd}vffddv",
+				"(vfd[v{fdv}vf]d)vffddv",
+				"()("
 		};
 
 		for (String s : testArray) {
 			boolean b = Utils.bracketsOk(s);
 			System.out.println(b);
 		}
+
+
 	}
 
 }
